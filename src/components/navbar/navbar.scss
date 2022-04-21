@@ -1,0 +1,96 @@
+.main-nav {
+  position: fixed;
+  top: 67px;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+  .nav-container {
+    justify-content: flex-end;
+    display: flex;
+    margin: 0 auto;
+    width: 1100px;
+    height: 53.5px;
+    position: relative;
+    .devices-store-link-sm {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      font-size: 20px;
+      margin: unset;
+      font-weight: 500;
+      display: none;
+    }
+    .first {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      a {
+        transition: background-color 0.5s;
+        font-weight: 70;
+        text-transform: capitalize;
+        position: relative;
+        overflow: hidden;
+        font-weight: 700;
+        margin-right: 20px;
+        &:after {
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          content: "";
+          height: 4px;
+          transition: width 0.5s;
+          width: 0;
+        }
+        &.active:after {
+          width: 100%;
+        }
+      }
+    }
+    .last {
+      display: flex;
+      align-items: center;
+      button {
+        outline: 0;
+        border: none;
+        background-color: unset;
+        cursor: pointer;
+      }
+      a {
+        margin-left: 15px;
+        position: relative;
+        .lengths {
+          position: absolute;
+          right: -85%;
+          top: -90%;
+          border-radius: 50%;
+          width: 27px;
+          height: 27px;
+          font-size: 12px;
+          font-weight: 800;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          pointer-events: none;
+        }
+      }
+      button i,
+      a i {
+        font-size: 19px;
+      }
+    }
+  }
+  .toggler {
+    display: none;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    margin-right: 20px;
+    cursor: pointer;
+    i {
+      font-size: 19px;
+      font-weight: 700;
+    }
+  }
+}
+@import "./navbar-media.scss";

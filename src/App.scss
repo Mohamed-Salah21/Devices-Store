@@ -1,0 +1,232 @@
+$navyBlue: #20232a;
+$grey: #ddd;
+$white: #fff;
+html {
+  scroll-behavior: auto !important ;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  &:hover {
+    color: #000;
+  }
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.dark-theme {
+  background-color: $navyBlue;
+  color: $white;
+  .website-name-container {
+    a {
+      color: #fff;
+    }
+    input[type="text"] {
+      background-color: #fff !important;
+      color: $navyBlue;
+    }
+  }
+  .nav-container {
+    .devices-store-link-sm {
+      color: #fff;
+    }
+    .first a {
+      color: $white;
+      &:hover {
+        color: orange;
+      }
+      &:after {
+        background-color: orange;
+      }
+      &.active {
+        color: orange;
+      }
+    }
+    .last a,
+    .last i {
+      color: #fff;
+    }
+    .last .lengths {
+      background-color: orange;
+      color: $navyBlue;
+    }
+    .toggler i {
+      color: #fff;
+    }
+  }
+  .home-section .home-section-inner {
+    background-color: rgba($navyBlue, 0.4);
+  }
+  .home-container,
+  .laptops-container,
+  .phones-container,
+  .accessories-container {
+    .h3 {
+      color: $white;
+    }
+    .product {
+      border: 1px solid #fff;
+      .product-button {
+        background-color: #ddd;
+        color: $navyBlue;
+        &:active {
+          background-color: orangered;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .cart-items-container {
+    .formating-products-button button {
+      background-color: #fff;
+    }
+    .cart-item {
+      border-top: 1px solid $white;
+      .counter-quantity button:active {
+        background-color: orangered;
+        color: #fff;
+      }
+    }
+
+    i {
+      color: $white;
+    }
+    .all-total-prices {
+      border: 1px solid #aaa;
+      background-color: #252934;
+    }
+  }
+  .copy-right p {
+    color: #fff !important ;
+  }
+}
+
+.light-theme {
+  background-color: $white;
+  .website-name-container {
+    a {
+      color: $navyBlue;
+    }
+    input[type="text"] {
+      background-color: $grey !important;
+      color: $navyBlue;
+    }
+  }
+  .nav-container {
+    .devices-store-link-sm {
+      color: $navyBlue;
+    }
+    .first a {
+      color: $navyBlue;
+      &:hover {
+        color: orangered;
+      }
+      &:after {
+        background-color: orangered;
+      }
+      &.active {
+        color: orangered;
+      }
+    }
+    .last a,
+    .last i {
+      color: $navyBlue;
+    }
+    .last .lengths {
+      background-color: orangered;
+      color: $white;
+    }
+    .toggler i {
+      color: $navyBlue;
+    }
+  }
+  .home-section .home-section-inner {
+    background-color: rgba(#fff, 0.4);
+  }
+  .home-container,
+  .laptops-container,
+  .phones-container,
+  .accessories-container {
+    .h3 {
+      color: #000;
+    }
+    .product {
+      border: 1px solid $navyBlue;
+      .product-button {
+        background-color: $navyBlue;
+        color: #fff;
+        &:active {
+          background-color: orange;
+          color: $navyBlue;
+        }
+      }
+    }
+  }
+  .cart-items-container {
+    .formating-products-button button {
+      background-color: $navyBlue;
+      color: #fff;
+    }
+    .cart-item {
+      button {
+        background-color: $navyBlue;
+        color: #fff;
+        &:active {
+          background-color: orange;
+          color: #000;
+        }
+      }
+      i {
+        color: $navyBlue;
+      }
+      border-top: 1px solid $navyBlue;
+    }
+    .all-total-prices {
+      border: 1px solid $navyBlue;
+      background-color: $grey;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .dark-theme {
+    .nav-container .first {
+      box-shadow: 0 0 1px #ddd;
+      background-color: #20232a;
+      a.active {
+        background-color: orange;
+        color: #20232a !important ;
+      }
+      a:hover:not(a.active) {
+        color: #fff !important ;
+      }
+    }
+  }
+  .light-theme {
+    .nav-container .first {
+      box-shadow: 0 0 1px #000;
+      background-color: #fff;
+      a.active {
+        background-color: orangered;
+        color: #fff !important ;
+      }
+      a:hover:not(a.active) {
+        color: #20232a !important ;
+      }
+    }
+  }
+}

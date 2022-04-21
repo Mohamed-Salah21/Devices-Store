@@ -1,0 +1,53 @@
+@media (max-width: 1200px) {
+  .main-nav {
+    .nav-container {
+      width: 992px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .main-nav {
+    .nav-container {
+      width: 768px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .main-nav {
+    top: 80.5px;
+    .nav-container {
+      position: relative;
+      width: 90%;
+      .devices-store-link-sm {
+        display: block;
+      }
+      .first {
+        position: absolute;
+        right: 0;
+        top: 100%;
+        height: 81px;
+        width: 75%;
+        height: auto;
+        display: block;
+        border-radius: 3px;
+        overflow: hidden !important ;
+        max-height: 0;
+        &.active {
+          max-height: 156px;
+        }
+        a {
+          display: block;
+          margin: 0;
+          padding: 10px 0;
+          text-align: center;
+          &:after {
+            display: none;
+          }
+        }
+      }
+      .toggler {
+        display: block;
+      }
+    }
+  }
+}

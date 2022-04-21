@@ -1,0 +1,7 @@
+@import "../../mixin.scss";
+.laptops-page {
+  margin-top: 115px;
+  .laptops-container {
+    @include style;
+  }
+}

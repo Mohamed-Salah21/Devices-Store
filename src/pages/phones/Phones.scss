@@ -1,0 +1,7 @@
+@import "../../mixin.scss";
+.phones-page {
+  margin-top: 115px;
+  .phones-container {
+    @include style;
+  }
+}

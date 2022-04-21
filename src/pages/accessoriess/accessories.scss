@@ -1,0 +1,7 @@
+@import "../../mixin.scss";
+.accessories-page {
+  margin-top: 115px;
+  .accessories-container {
+    @include style;
+  }
+}
